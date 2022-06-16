@@ -1,0 +1,34 @@
+{
+  "name": "react-client-server",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "npm run test:ci --workspaces",
+    "prepare": "husky install",
+    "prettier": "prettier --write",
+    "lint-staged": "lint-staged -q"
+  },
+  "author": "drag13",
+  "license": "GNU",
+  "workspaces": [
+    "./client",
+    "./server",
+    "./shared"
+  ],
+  "devDependencies": {
+    "@types/jest": "^28.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "jest": "^28.1.1",
+    "ts-jest": "^28.0.5",
+    "typescript": "^4.7.3"
+  },
+  "optionalDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.1",
+    "prettier": "^2.7.1"
+  }
+}
