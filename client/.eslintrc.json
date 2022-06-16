@@ -1,12 +1,6 @@
 {
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
-    "prettier"
-  ],
+  "extends": ["../.eslintrc.json", "plugin:react/recommended"],
   "parserOptions": {
-    "project": ["./client/tsconfig.json"],
     "ecmaFeatures": {
       "jsx": true
     }

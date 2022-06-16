@@ -1,8 +1,9 @@
+import { UnitDto } from 'rcs-shared';
 import { useEffect, useState } from 'react';
 import styles from './App.module.css';
 
 function App() {
-  const [loosesRequest, setData] = useState({ data: [] as any[], status: 'pending' });
+  const [loosesRequest, setData] = useState({ data: [] as UnitDto[], status: 'pending' });
   const { data, status } = loosesRequest;
 
   useEffect(() => {

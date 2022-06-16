@@ -1,8 +1,9 @@
 {
+  "$schema": "https://json.schemastore.org/eslintrc.json",
+  "root": true,
   "env": {
     "es2021": true
   },
-  "root": true,
   "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -10,5 +11,15 @@
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint"],
-  "rules": {}
+  "rules": {},
+  "ignorePatterns": [
+    "*.test.ts",
+    "*.test.tsx",
+    "coverage",
+    "dist",
+    "*.svg",
+    "*.css",
+    "*.less",
+    "*.scss"
+  ]
 }

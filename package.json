@@ -9,14 +9,17 @@
     "prettier": "prettier --write",
     "lint-staged": "lint-staged -q",
     "dev:server": "cd server && npm run dev",
-    "dev:client": "cd client && npm run dev"
+    "dev:client": "cd client && npm run dev",
+    "build:server": "cd server && npm run build",
+    "build:client": "cd client && npm run build",
+    "build": "npm run build:server && npm run build:client"
   },
   "author": "drag13",
   "license": "GNU",
   "workspaces": [
     "./client",
     "./server",
-    "./shared"
+    "./rcs-shared"
   ],
   "devDependencies": {
     "@types/jest": "^28.1.1",
@@ -32,5 +35,8 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.1",
     "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "rcs-shared": "file:rcs-shared"
   }
 }
