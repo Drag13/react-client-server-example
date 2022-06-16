@@ -7,7 +7,9 @@
     "test": "npm run test:ci --workspaces",
     "prepare": "husky install",
     "prettier": "prettier --write",
-    "lint-staged": "lint-staged -q"
+    "lint-staged": "lint-staged -q",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev"
   },
   "author": "drag13",
   "license": "GNU",
