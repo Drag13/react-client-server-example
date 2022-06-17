@@ -1,4 +1,4 @@
-import Joi from 'Joi';
+import Joi from 'joi';
 import { ServerRoute } from '@hapi/hapi';
 import { UnitDto, UnitType } from 'rcs-shared';
 import { getUnits } from '../../bll/unit';
