@@ -1,5 +1,7 @@
 # React Client Server Monorepo - Example
 
+[<img src="standswithukraine.svg">](https://savelife.in.ua/donate/)
+
 This is a ClientServer monorepo built with React and Hapi for personal experiments.
 
 ## Features
