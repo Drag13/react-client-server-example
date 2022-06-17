@@ -5,7 +5,7 @@
   "main": "src/index.ts",
   "devDependencies": {},
   "scripts": {
-    "test": "exit 0"
+    "test:ci": "exit 0"
   },
   "author": "",
   "license": "ISC"

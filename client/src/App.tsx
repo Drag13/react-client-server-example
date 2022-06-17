@@ -1,5 +1,7 @@
 import { UnitDto } from 'rcs-shared';
 import { useEffect, useState } from 'react';
+import { API_BASE_PATH } from './constants';
+
 import styles from './App.module.css';
 
 function App() {
@@ -7,17 +9,10 @@ function App() {
   const { data, status } = loosesRequest;
 
   useEffect(() => {
-    async function fetchLooses() {
-      try {
-        const data = await (await fetch('http://localhost:5000/unit')).json();
-        setData({ data, status: 'ok' });
-      } catch (error) {
-        console.log(error);
-        setData({ data: [], status: 'failed' });
-      }
-    }
-
-    fetchLooses();
+    fetch(`${API_BASE_PATH}/unit`)
+      .then((x) => x.json())
+      .then((data) => setData({ data, status: 'ok' }))
+      .catch(() => setData({ data: [], status: 'failed' }));
   }, []);
 
   return (

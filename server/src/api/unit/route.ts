@@ -17,7 +17,7 @@ const handler = async (): Promise<UnitDto[]> => {
 
 export const unitGet: ServerRoute = {
   method: 'GET',
-  path: '/unit',
+  path: '/api/unit',
   handler,
   options: {
     cors: CORS,

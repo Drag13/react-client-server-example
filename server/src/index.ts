@@ -2,7 +2,7 @@ import Hapi from '@hapi/hapi';
 import * as HapiSwagger from 'hapi-swagger';
 import * as Inert from '@hapi/inert';
 import * as Vision from '@hapi/vision';
-import { unitGet } from './routes/unit';
+import { unitGet } from './api/unit/route';
 import { DEBUG, HOST, PORT } from './constants';
 
 const swaggerOptions: HapiSwagger.RegisterOptions = {
