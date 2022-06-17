@@ -12,7 +12,8 @@
     "dev:client": "cd client && npm run dev",
     "build:server": "cd server && npm run build",
     "build:client": "cd client && npm run build",
-    "build": "npm run build:server && npm run build:client"
+    "build": "npm run build:server && npm run build:client",
+    "lint": "eslint . --ext .ts,.tsx"
   },
   "author": "drag13",
   "license": "GNU",
