@@ -16,6 +16,7 @@
     "@hapi/hapi": "^20.2.2",
     "@hapi/inert": "^6.0.5",
     "@hapi/vision": "^6.1.0",
+    "@types/hapi": "^18.0.7",
     "hapi-swagger": "^14.4.0",
     "joi": "^17.6.0"
   },
