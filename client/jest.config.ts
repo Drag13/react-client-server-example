@@ -17,6 +17,7 @@ const config: Config.InitialOptions = {
   moduleNameMapper: {
     '\\.(css|less)$': 'identity-obj-proxy',
   },
+  collectCoverageFrom: ['src/**/*.{ts,tsx}'],
 };
 
 module.exports = config;
